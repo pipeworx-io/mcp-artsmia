@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-artsmia",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Minneapolis Institute of Art (Mia) collection MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-artsmia": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "artsmia"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-artsmia.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/artsmia",
   "pipeworx": {
-    "sourceHash": "v1-733eec2128d60e02982127b8f1c4212ca9d72b0befd9b72b221768a98da3a46c",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "artsmia",
+    "gatewaySlug": "artsmia",
+    "sourceHash": "v1-a3ae054c0fe1f183ae00030917821c38a65c2b7dffeef7ef2b5b14b202d48418",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
