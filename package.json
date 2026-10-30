@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-artsmia",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Minneapolis Institute of Art (Mia) collection MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "artsmia",
     "gatewaySlug": "artsmia",
-    "sourceHash": "v1-a3ae054c0fe1f183ae00030917821c38a65c2b7dffeef7ef2b5b14b202d48418",
-    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
+    "sourceHash": "v1-c0f7b3914c21e13452695b4258232df6956d1ff99a4677775ea4e59da445b06e",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
